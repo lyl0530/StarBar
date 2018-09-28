@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rating="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lyl.startest.MainActivity">
+
+    <com.lyl.startest.StarBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star"
+        android:layout_marginTop="10dp"
+        rating:starEmpty="@drawable/star0"
+        rating:starFill="@drawable/star1"
+        rating:starDistance="3dp"
+        rating:starCount="5"
+        rating:starSize="25dp"
+        rating:integerMark="true"
+        rating:displayR2l="false"/>
+    <!--
+        StarBar中定义android:layout_centerInParent="true"，在list中滚动显示时，有的item会失效
+        慎用layout_centerInParent！
+    -->
+
+    <com.lyl.startest.StarBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star1"
+        android:layout_marginTop="10dp"
+        rating:starEmpty="@drawable/star0"
+        rating:starFill="@drawable/star1"
+        rating:starDistance="15dp"
+        rating:starCount="8"
+        rating:starSize="25dp"
+        rating:integerMark="true"
+        rating:displayR2l="true"/>
+</LinearLayout>
